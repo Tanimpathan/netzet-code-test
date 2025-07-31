@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         figtree: ['var(--font-figtree)', 'sans-serif'],
+        urbanist: ['var(--font-urbanist)', 'sans-serif'],
       },
     },
   },

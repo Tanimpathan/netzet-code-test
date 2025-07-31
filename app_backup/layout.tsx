@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { figtree } from './fonts';
-import { urbanist } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${figtree.variable} ${urbanist.variable}`}
+        className={`${figtree.variable}`}
       >
         {children}
       </body>

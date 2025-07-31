@@ -5,7 +5,7 @@ import logo from '@/public/logo.svg'
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between py-4 max-w-screen-xl mx-auto">
+    <nav className="flex items-center justify-between py-4 max-w-screen-xl mx-auto">
       {/* Logo */}
       <div className="flex items-center gap-2">
         <Image
@@ -18,7 +18,7 @@ export default function Navbar() {
       </div>
 
       {/* Navigation Items */}
-      <ul className="hidden md:flex gap-[40px] text-sm font-medium text-gray-400">
+      <ul className="hidden md:flex gap-[40px] text-sm font-medium">
         <li>
           <Link href="#" className="">
             About Us

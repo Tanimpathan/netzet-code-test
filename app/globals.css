@@ -5,3 +5,10 @@ body {
   color: var(--foreground);
   font-family: var(--font-figtree), sans-serif;
 }
+.hero-bg {
+  height: 100vh;
+  background-image: url('/phone-mockup.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+}

@@ -35,11 +35,11 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative bg-black text-white pt-20 pb-12 z-10">
-      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center relative">
+    <section className="relative bg-black text-white pt-20 pb-12">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center relative">
 
         {/* Text Content */}
-        <div className="w-full md:w-2/5 space-y-6 z-10">
+        <div className="w-full md:w-1/2 space-y-6 z-10">
           <h1 className="text-3xl md:text-4xl font-bold leading-snug">
             Want to Turn Social Media Into a Profitable Career?
           </h1>
@@ -59,15 +59,15 @@ export default function Hero() {
         </div>
 
         {/* Phone Mockup */}
-        <div className="w-full md:w-3/5 flex mt-12 md:mt-0 md:absolute md:top-[-226px] md:right-[-100px] hero-bg">
-          {/* <Image
+        <div className="relative w-full md:w-1/2 flex mt-12 md:mt-0 md:absolute md:top-0 md:right-[-100px] z-0">
+          <Image
             src="/phone-mockup.png" // Use the uploaded image in public/
             alt="Phone mockup"
             width={500}
             height={500}
             className=" w-full h-auto object-contain"
             priority
-          /> */}
+          />
         </div>
       </div>
     </section>

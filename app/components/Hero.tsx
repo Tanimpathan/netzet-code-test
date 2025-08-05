@@ -1,76 +1,56 @@
-// import CTAButton from './CTAButton'
-// import FeatureList from './FeatureList'
-// import PhoneMockup from './PhoneMockup'
-
-// export default function Hero() {
-//   return (
-//     <section className="flex flex-col-reverse lg:flex-row justify-between max-w-screen-xl mx-auto px-4">
-//       {/* Left */}
-//       <div className="max-w-xl">
-//         <h1 className="text-3xl md:text-4xl font-bold mb-4">
-//           Want to Turn Social Media Into a Profitable Career?
-//         </h1>
-//         <h2 className="text-xl font-semibold text-cyan-400 mb-6">
-//           Discover your way to success with Fametonic:
-//         </h2>
-
-//         <FeatureList />
-
-//         <CTAButton />
-        
-//         <p className="text-xs text-gray-400 mt-4">
-//           By clicking “Get Started”, you agree with Terms and Conditions, Privacy Policy, Subscription Terms
-//         </p>
-//         <p className="text-[10px] text-gray-500 mt-1">Fametonic 2025 © All Rights Reserved.</p>
-//       </div>
-
-//       {/* Right */}
-//       <PhoneMockup />
-//     </section>
-//   )
-// }
-
-
 import Image from "next/image";
+import Button from "./Button";
 
 export default function Hero() {
   return (
-    <section className="relative bg-black text-white pt-20 pb-12 z-10">
+    <section className="relative bg-black text-white pt-10 pb-2 z-10">
       <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center relative">
 
+        {/* Phone Mockup */}
+        <div className="w-full md:w-5/7 flex mt-12 md:mt-0 md:absolute md:top-[-250px] md:right-[-160px] hero-bg">
+          <Image
+            src="/phone-mockup.png"
+            alt="Phone mockup"
+            width={666}
+            height={679}      
+            priority
+          />
+        </div> 
+      </div>
+      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center relative">
+        
         {/* Text Content */}
-        <div className="w-full md:w-2/5 space-y-6 z-10">
-          <h1 className="text-3xl md:text-4xl font-bold leading-snug">
+        {/* w-full md:w-3/5 space-y-6 z-10 */}
+        <div className="md:max-w-[516px]">
+          <h1 className="font-urbanist font-bold text-[25px] lg:leading-[1] leading-none tracking-normal text-center lg:tracking-[0] mb-2 lg:text[35px] lg:text-start">
             Want to Turn Social Media Into a Profitable Career?
           </h1>
-          <h2 className="text-xl md:text-2xl font-semibold text-cyan-400">
-            Discover your way to success with <span className="text-pink-500">Fametonic</span>:
+
+          <h2 className="font-urbanist font-bold text-[25px] leading-none tracking-normal lg:text-[35px] lg:leading-[1] lg:tracking-[0] text-[#00E7F9] [text-shadow:0px_4px_4px_#FC004E] mb-4 text-center lg:text-start">
+            Discover your way to success with Fametonic:
           </h2>
-          <ul className="space-y-3 text-sm md:text-base text-gray-200 list-disc list-inside">
-            <li>Start growing your influence right away—no waiting required!</li>
-            <li>Create viral TikToks and Reels step by step</li>
-            <li>Use a Personal AI Worker to boost your content</li>
-            <li>Learn from expert-led courses</li>
+
+          <ul className="space-y-3 text-sm md:text-base text-gray-200 list-none list-inside mb-5">
+            <li className="list-design"><span className="font-figtree font-semibold text-base leading-[22px] tracking-normal ps-[10px]">Start growing your influence right away—no waiting required!</span></li>
+
+            <li className="list-design"><span className="font-figtree font-semibold text-base leading-[22px] tracking-normal ms-[10px]">Create viral TikToks and Reels step by step</span></li>
+
+            <li className="list-design"><span className="font-figtree font-semibold text-base leading-[22px] tracking-normal ms-[10px]">Use a Personal AI Worker to boost your content</span></li>
+            
+            <li className="list-design"><span className="font-figtree font-semibold text-base leading-[22px] tracking-normal ms-[10px]">Learn from expert-led courses</span></li>
           </ul>
-          <button className="bg-pink-500 text-white py-3 px-6 rounded-full font-semibold hover:bg-pink-600 transition">
-            GET STARTED →
-          </button>
-          <p className="text-xs text-gray-500">1-minute quiz for personalized insights</p>
+
+          <div className="md:w-[313px] mb-[24px]">
+            <Button></Button>
+            <p className="mt-[10px] font-figtree font-normal text-xs leading-4 text-center tracking-normal">1-minute quiz for personalized insights</p>
+          </div>
+
+          <p className="font-figtree font-medium text-xs leading-none tracking-normal text-[#ABABAB] mb-[10px]">By clicking "Get Started", you agree with Terms and Conditions, Privacy Policy, Subscription Terms</p>
+          <p className="font-figtree font-medium text-[10px] leading-none align-middle tracking-normal text-[#ABABAB]">Fametonic 2025 ©All Rights Reserved.</p>
         </div>
 
-        {/* Phone Mockup */}
-        <div className="w-full md:w-3/5 flex mt-12 md:mt-0 md:absolute md:top-[-226px] md:right-[-100px] hero-bg">
-          {/* <Image
-            src="/phone-mockup.png" // Use the uploaded image in public/
-            alt="Phone mockup"
-            width={500}
-            height={500}
-            className=" w-full h-auto object-contain"
-            priority
-          /> */}
-        </div>
+        
       </div>
     </section>
   );
 }
-

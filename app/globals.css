@@ -4,11 +4,26 @@ body {
   background: #010101;
   color: var(--foreground);
   font-family: var(--font-figtree), sans-serif;
-}
-.hero-bg {
   height: 100vh;
-  background-image: url('/phone-mockup.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: right center;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .list-design {
+    @apply relative pl-[22px];
+  }
+
+  .list-design::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    background-image: url('/stars.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

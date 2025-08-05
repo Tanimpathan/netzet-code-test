@@ -6,11 +6,10 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <div className="max-w-[1229px] mx-auto px-4">
-        <div className="mt-2 relative z-20">
+      <div className="w-full px-5 lg:max-w-[1056px] lg:mx-auto lg:px-[-216px]">
+        <div className="mt-3 relative z-20">
           <Navbar />
-        </div>
-        
+        </div>        
         <Hero />
       </div>
     </div>
